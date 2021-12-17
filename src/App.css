@@ -19,6 +19,10 @@ body {
   overflow: hidden;
 }
 
+.cart-image {
+  height: 50px;
+}
+
 a {
   color: black;
 }

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 export default function Products({ product }) {
     return (
-        <Link to={`${product.id}`}>
+        <Link to={`/product/${product.id}`}>
             <Card>
                 <Card.Img className="product-cover" variant="top" src={product.image} />
                 <Card.Body>
