@@ -31,7 +31,7 @@ export default function Home() {
                     {
                         products && 
                         products.map(product => (
-                            <Col key={product.id}>        
+                            <Col key={product.id} xs="12" sm="6" md="4" lg="3" className="mb-2">        
                                 <Products product={product} />
                             </Col>
                         ))
