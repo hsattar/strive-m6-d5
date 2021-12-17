@@ -1,7 +1,8 @@
-import MyNavbar from './components/MyNavbar'
-import Home from './pages/Home'
-import Footer from './components/Footer'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import MyNavbar from './components/MyNavbar'
+import Footer from './components/Footer'
+import Home from './pages/Home'
+import ProductDetails from './components/ProductDetails'
 
 require('dotenv')
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <MyNavbar />
       <Routes>
         <Route path='/' element={<Home />} />
+        <Route path='/:productId' element={<ProductDetails />} />
       </Routes>
       <Footer />
     </Router>
